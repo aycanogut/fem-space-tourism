@@ -1,16 +1,10 @@
 {
-  "name": "nextjs-fullstack-app-template",
-  "author": "YOUR_NAME_HERE",
-  "description": "A tutorial and template for creating a production-ready fullstack Next.js application",
+  "name": "fem-space-tourism",
+  "author": "Aycan Öğüt",
+  "description": "This is a solution to the Space tourism website challenge on Frontend Mentor.",
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
-  "homepage": "YOUR_REPOSITORY_HERE",
-  "engines": {
-    "node": ">=14.0.0",
-    "yarn": ">=1.22.0",
-    "npm": "please-use-yarn"
-  },
+  "homepage": "https://fem-space-tourism-ten.vercel.app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
