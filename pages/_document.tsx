@@ -1,5 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
+import Header from '../components/Header/Header'
 class MyDocument extends Document {
   render() {
     return (
@@ -11,6 +12,10 @@ class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
             rel="stylesheet"
+          />
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
           />
         </Head>
         <body>
