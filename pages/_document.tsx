@@ -13,10 +13,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
             rel="stylesheet"
           />
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
         </Head>
         <body>
           {/* Nav */}
