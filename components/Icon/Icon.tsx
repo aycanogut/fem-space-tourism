@@ -8,9 +8,10 @@ interface IIconProps {
   className?: string
   width: string
   height: string
+  onClick?: () => void
 }
 
-const Icon = ({ icon, className, width, height }: IIconProps) => {
+const Icon = ({ icon, className, width, height, onClick }: IIconProps) => {
   return (
     <IcoMoon
       iconSet={iconSet}
@@ -18,6 +19,7 @@ const Icon = ({ icon, className, width, height }: IIconProps) => {
       className={className}
       width={width}
       height={height}
+      onClick={onClick}
     />
   )
 }
