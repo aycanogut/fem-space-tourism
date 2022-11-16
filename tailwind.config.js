@@ -16,6 +16,15 @@ module.exports = {
       bellefair: ["'Bellefair', serif", 'sans-serif'],
       barlow: ["'Barlow Condensed', serif", 'sans-serif'],
     },
+    letterSpacing: {
+      wide: '2.7px',
+      wider: '2.35px',
+      widest: '4.75px',
+    },
+    fontWeight: {
+      normal: 400,
+      bold: 700,
+    },
     extend: {
       colors: {
         vulcan: '#0B0D17',
