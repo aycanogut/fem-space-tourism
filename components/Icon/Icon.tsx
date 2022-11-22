@@ -6,8 +6,8 @@ import iconSet from './selection.json'
 interface IIconProps {
   icon: string
   className?: string
-  width: string
-  height: string
+  width?: string
+  height?: string
   onClick?: () => void
 }
 
