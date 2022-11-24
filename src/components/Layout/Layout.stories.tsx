@@ -4,7 +4,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Layout, { ILayout } from './Layout'
 
 export default {
-  title: 'layout/Layout',
+  title: 'Layout',
   component: Layout,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
