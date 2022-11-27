@@ -18,4 +18,5 @@ export const Base = Template.bind({})
 
 Base.args = {
   label: 'Layout',
+  path: 'home',
 } as ILayout
