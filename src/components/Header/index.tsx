@@ -4,17 +4,10 @@ import { motion } from 'framer-motion'
 
 import useWidth from '../../hooks/useWidth'
 import navigation from '../../routes/navigation'
-
-import Icon from '../Icon'
 import variants from '../../helpers/variants'
 
-export interface IHeader {}
-
-export interface IHeaderItems {
-  url: string
-  label: string
-  id: string
-}
+import Icon from '../Icon'
+import { IHeader, IHeaderItems } from '../../interfaces/Header.interface'
 
 const Header: FC<IHeader> = () => {
   const [isActive, setIsActive] = useState<boolean>(false)

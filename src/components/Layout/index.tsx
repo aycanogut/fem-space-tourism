@@ -3,10 +3,7 @@ import Header from '../Header'
 
 import useWidth from '../../hooks/useWidth'
 import screenSize from '../../helpers/screenSize'
-
-export interface ILayout {
-  path: string
-}
+import { ILayout } from '../../interfaces/Layout.interface'
 
 const Layout: FC<ILayout> = ({ path }) => {
   const { width } = useWidth()
