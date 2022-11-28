@@ -1,7 +1,8 @@
 // boilerplate story example
 
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import Header, { IHeader } from './Header'
+import Header from '../components/Header'
+import { IHeader } from '../interfaces/Header.interface'
 
 export default {
   title: 'Header',

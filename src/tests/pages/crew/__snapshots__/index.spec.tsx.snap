@@ -182,7 +182,12 @@ exports[`renders correctly 1`] = `
     </nav>
   </header>,
   <section
-    className="flex h-screen w-screen flex-col items-center bg-home-mobile bg-cover bg-center sm:bg-home-tablet lg:bg-home-desktop "
+    className="flex h-screen w-screen flex-col items-center bg-cover bg-center"
+    style={
+      {
+        "backgroundImage": "url(/assets/crew/background-crew-desktop.webp)",
+      }
+    }
   />,
 ]
 `;

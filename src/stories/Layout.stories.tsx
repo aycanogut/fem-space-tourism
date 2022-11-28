@@ -1,7 +1,8 @@
 // boilerplate story example
 
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import Layout, { ILayout } from './Layout'
+import Layout from '../components/Layout'
+import { ILayout } from '../interfaces/Layout.interface'
 
 export default {
   title: 'Layout',

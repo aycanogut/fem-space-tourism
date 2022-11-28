@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer'
-import Header from './Header'
+import Technology from '../../../pages/technology'
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Header />).toJSON()
+  const tree = renderer.create(<Technology />).toJSON()
   expect(tree).toMatchSnapshot()
 })

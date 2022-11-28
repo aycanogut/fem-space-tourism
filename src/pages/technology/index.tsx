@@ -1,8 +1,9 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Layout from '../../components/Layout/Layout'
 
-const Home: NextPage = () => {
+import Layout from '../../components/Layout'
+
+const Technology: NextPage = () => {
   return (
     <>
       <Head>
@@ -14,4 +15,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Technology

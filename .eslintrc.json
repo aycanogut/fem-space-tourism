@@ -21,6 +21,6 @@
   ],
   "rules": {
     "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
-    "jsx-a11y/anchor-is-valid": false
+    "jsx-a11y/anchor-is-valid": 0
   }
 }
