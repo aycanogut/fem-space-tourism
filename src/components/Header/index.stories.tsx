@@ -1,22 +1,21 @@
 // boilerplate story example
 
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import Layout, { ILayout } from './Layout'
+import Header, { IHeader } from '.'
 
 export default {
-  title: 'Layout',
-  component: Layout,
+  title: 'Header',
+  component: Header,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-} as ComponentMeta<typeof Layout>
+} as ComponentMeta<typeof Header>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Layout> = (args) => <Layout {...args} />
+const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />
 
 export const Base = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 
 Base.args = {
-  label: 'Layout',
-  path: 'home',
-} as ILayout
+  label: 'Header',
+} as IHeader

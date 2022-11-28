@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer'
-import Layout from './Layout'
+import Layout from '.'
 
 it('renders correctly', () => {
   const tree = renderer.create(<Layout path="home" />).toJSON()

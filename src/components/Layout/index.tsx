@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import Header from '../Header/Header'
+import Header from '../Header'
 
 import useWidth from '../../hooks/useWidth'
 import screenSize from '../../helpers/screenSize'

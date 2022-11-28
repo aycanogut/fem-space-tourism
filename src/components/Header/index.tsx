@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import useWidth from '../../hooks/useWidth'
 import navigation from '../../routes/navigation'
 
-import Icon from '../Icon/Icon'
+import Icon from '../Icon'
 import variants from '../../helpers/variants'
 
 export interface IHeader {}
