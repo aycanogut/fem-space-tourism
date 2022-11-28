@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer'
-import Crew from '.'
+import Destination from '../../../pages/destination'
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Crew />).toJSON()
+  const tree = renderer.create(<Destination />).toJSON()
   expect(tree).toMatchSnapshot()
 })

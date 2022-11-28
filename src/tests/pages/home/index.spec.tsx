@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer'
-import Header from '.'
+import Home from '../../../pages'
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Header />).toJSON()
+  const tree = renderer.create(<Home />).toJSON()
   expect(tree).toMatchSnapshot()
 })
