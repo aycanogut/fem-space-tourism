@@ -1,14 +1,27 @@
 import { FC } from 'react'
 import Header from '../Header/Header'
 
-export interface ILayout {}
+import useWidth from '../../hooks/useWidth'
+import screenSize from '../../helpers/screenSize'
 
-const Layout: FC<ILayout> = () => {
+export interface ILayout {
+  path: string
+}
+
+const Layout: FC<ILayout> = ({ path }) => {
+  const { width } = useWidth()
+  const deviceSize = screenSize(width)
+
   return (
     <>
       <Header />
 
-      <section className="flex h-screen w-screen flex-col items-center bg-home-mobile bg-cover bg-center sm:bg-home-tablet	lg:bg-home-desktop "></section>
+      <section
+        style={{
+          backgroundImage: `url(/assets/${path}/background-${path}-${deviceSize}.webp)`,
+        }}
+        className="flex h-screen w-screen flex-col items-center bg-cover bg-center"
+      ></section>
     </>
   )
 }

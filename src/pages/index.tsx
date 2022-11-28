@@ -9,7 +9,7 @@ const Home: NextPage = () => {
         <title>Space Tourism</title>
       </Head>
 
-      <Layout />
+      <Layout path="home" />
     </>
   )
 }

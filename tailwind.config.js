@@ -51,26 +51,6 @@ module.exports = {
         heading_5: '28px',
         base: '18px',
       },
-      backgroundImage: {
-        'home-mobile': "url('../assets/home/background-home-mobile.webp')",
-        'home-tablet': "url('../assets/home/background-home-tablet.webp')",
-        'home-desktop': "url('../assets/home/background-home-desktop.webp')",
-        'destination-mobile':
-          "url('../assets/destination/background-destination-mobile.webp')",
-        'destination-tablet':
-          "url('../assets/destination/background-destination-tablet.webp')",
-        'destination-desktop':
-          "url('../assets/destination/background-destination-desktop.webp')",
-        'crew-mobile': "url('../assets/crew/background-crew-mobile.webp')",
-        'crew-tablet': "url('../assets/crew/background-crew-tablet.webp')",
-        'crew-desktop': "url('../assets/crew/background-crew-desktop.webp')",
-        'technology-mobile':
-          "url('../assets/technology/background-technology-mobile.webp')",
-        'technology-tablet':
-          "url('../assets/technology/background-technology-tablet.webp')",
-        'technology-desktop':
-          "url('../assets/technology/background-technology-desktop.webp')",
-      },
       backdropBlur: {
         nav: '20px',
       },

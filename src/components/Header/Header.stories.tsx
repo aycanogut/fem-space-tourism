@@ -4,7 +4,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Header, { IHeader } from './Header'
 
 export default {
-  title: 'navigation/Header',
+  title: 'Header',
   component: Header,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

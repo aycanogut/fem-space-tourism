@@ -6,6 +6,7 @@ import useWidth from '../../hooks/useWidth'
 import navigation from '../../routes/navigation'
 
 import Icon from '../Icon/Icon'
+import variants from '../../helpers/variants'
 
 export interface IHeader {}
 
@@ -18,20 +19,6 @@ export interface IHeaderItems {
 const Header: FC<IHeader> = () => {
   const [isActive, setIsActive] = useState<boolean>(false)
   const { width } = useWidth()
-
-  const handleWindowSize = () => {
-    if (width && width <= 600) {
-      return {
-        open: { opacity: 1, y: 0 },
-        closed: { opacity: 0, y: '-100%' },
-      }
-    } else {
-      return {
-        open: { opacity: 1, y: 0 },
-        closed: { opacity: 1, y: 0 },
-      }
-    }
-  }
 
   return (
     <motion.header
@@ -62,7 +49,7 @@ const Header: FC<IHeader> = () => {
       <motion.nav
         initial={{ opacity: 0 }}
         animate={isActive ? 'open' : 'closed'}
-        variants={handleWindowSize()}
+        variants={variants(width)}
         transition={{ duration: 0.5 }}
         className="absolute top-0 right-0 h-screen w-2/3 bg-white bg-opacity-5 backdrop-blur-nav before:absolute before:-left-[30%] before:top-1/2 before:hidden before:h-[1px] before:w-1/3 before:bg-white before:opacity-30 sm:ml-auto sm:h-24 sm:w-nav_sm lg:mt-10 lg:w-nav_lg before:lg:block"
         role="navigation"
