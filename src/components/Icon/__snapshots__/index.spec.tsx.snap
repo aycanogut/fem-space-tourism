@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<svg
+  style={
+    {
+      "display": "inline-block",
+      "fill": "currentColor",
+      "stroke": "currentColor",
+    }
+  }
+  viewBox="0 0 1024 1024"
+>
+  <path
+    d="M1024 512c0 282.77-229.23 512-512 512s-512-229.23-512-512c0-282.77 229.23-512 512-512s512 229.23 512 512z"
+    fill="rgb(255, 255, 255)"
+  />
+  <path
+    d="M512 0c0 341.333-170.667 512-512 512 335.317 2.432 505.984 173.099 512 512 0-341.333 170.667-512 512-512-341.333 0-512-170.667-512-512z"
+    fill="rgb(11, 13, 23)"
+  />
+</svg>
+`;
