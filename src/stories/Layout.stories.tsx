@@ -2,7 +2,7 @@
 
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Layout from '../components/Layout'
-import { ILayout } from '../interfaces/Layout.interface'
+import { ILayoutProps } from '../interfaces/Layout.interface'
 
 export default {
   title: 'Layout',
@@ -20,4 +20,4 @@ export const Base = Template.bind({})
 Base.args = {
   label: 'Layout',
   path: 'home',
-} as ILayout
+} as ILayoutProps

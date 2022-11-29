@@ -2,7 +2,7 @@
 
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Header from '../components/Header'
-import { IHeader } from '../interfaces/Header.interface'
+import { IHeaderProps } from '../interfaces/Header.interface'
 
 export default {
   title: 'Header',
@@ -19,4 +19,4 @@ export const Base = Template.bind({})
 
 Base.args = {
   label: 'Header',
-} as IHeader
+} as IHeaderProps

@@ -7,9 +7,9 @@ import navigation from '../../routes/navigation'
 import variants from '../../helpers/variants'
 
 import Icon from '../Icon'
-import { IHeader, IHeaderItems } from '../../interfaces/Header.interface'
+import { IHeaderProps, IHeaderItems } from '../../interfaces/Header.interface'
 
-const Header: FC<IHeader> = () => {
+const Header: FC<IHeaderProps> = () => {
   const [isActive, setIsActive] = useState<boolean>(false)
   const { width } = useWidth()
 
