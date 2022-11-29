@@ -3,10 +3,10 @@ import { FC } from 'react'
 import useWidth from '../../hooks/useWidth'
 import screenSize from '../../helpers/screenSize'
 
-import { ILayout } from '../../interfaces/Layout.interface'
+import { ILayoutProps } from '../../interfaces/Layout.interface'
 import Header from '../Header'
 
-const Layout: FC<ILayout> = ({ path }) => {
+const Layout: FC<ILayoutProps> = ({ path }) => {
   const { width } = useWidth()
   const deviceSize = screenSize(width)
 

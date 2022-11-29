@@ -1,3 +1,3 @@
-export interface ILayout {
+export interface ILayoutProps {
   path: string
 }
