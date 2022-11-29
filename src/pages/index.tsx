@@ -2,6 +2,7 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 
 import Layout from '../components/Layout'
+import Button from '../components/Button'
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,9 @@ const Home: NextPage = () => {
         <title>Space Tourism</title>
       </Head>
 
-      <Layout path="home" />
+      <Layout path="home">
+        <Button text="explore" />
+      </Layout>
     </>
   )
 }

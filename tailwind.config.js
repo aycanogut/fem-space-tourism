@@ -17,6 +17,8 @@ module.exports = {
       barlow: ["'Barlow Condensed', serif", 'sans-serif'],
     },
     letterSpacing: {
+      tight: '1.25px',
+      normal: '2px',
       wide: '2.35px',
       wider: '2.7px',
       widest: '4.75px',
@@ -39,6 +41,9 @@ module.exports = {
         nav_lg_top: '175px',
         nav_lg_left: '123px',
         nav_lg_gap: '11px',
+        button_sm: '150px',
+        button_md: '242px',
+        button_lg: '274px',
       },
       fontSize: {
         nav: '16px',
@@ -50,9 +55,13 @@ module.exports = {
         heading_4: '32px',
         heading_5: '28px',
         base: '18px',
+        button: '20px',
       },
       backdropBlur: {
         nav: '20px',
+      },
+      boxShadow: {
+        button: '1px 1px 0px 88px rgba(255,255,255,0.15);',
       },
     },
   },
