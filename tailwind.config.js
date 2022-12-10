@@ -8,9 +8,9 @@ module.exports = {
     screens: {
       xs: '375px',
       sm: '600px',
-      md: '900px',
-      lg: '1200px',
-      xl: '1536px',
+      md: '768px',
+      lg: '900px',
+      xl: '1200px',
     },
     fontFamily: {
       bellefair: ["'Bellefair', serif", 'sans-serif'],
@@ -57,6 +57,7 @@ module.exports = {
         button_sm: '150px',
         button_md: '242px',
         button_lg: '274px',
+        button_sm_top: '76px',
       },
       backdropBlur: {
         nav: '20px',
