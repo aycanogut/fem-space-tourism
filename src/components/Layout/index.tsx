@@ -6,7 +6,7 @@ import screenSize from '../../helpers/screenSize'
 import { ILayoutProps } from '../../interfaces/Layout.interface'
 import Header from '../Header'
 
-const Layout: FC<ILayoutProps> = ({ path, children }) => {
+const Layout: FC<ILayoutProps> = ({ path, children, className }) => {
   const { width } = useWidth()
   const deviceSize = screenSize(width)
 
@@ -14,14 +14,14 @@ const Layout: FC<ILayoutProps> = ({ path, children }) => {
     <>
       <Header />
 
-      <section
+      <main
         style={{
           backgroundImage: `url(/assets/${path}/background-${path}-${deviceSize}.webp)`,
         }}
-        className="flex h-screen w-screen flex-col items-center bg-cover bg-center"
+        className={`flex h-screen w-screen bg-cover bg-center ${className}`}
       >
         {children}
-      </section>
+      </main>
     </>
   )
 }

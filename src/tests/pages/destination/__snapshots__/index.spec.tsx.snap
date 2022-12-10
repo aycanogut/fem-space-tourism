@@ -103,7 +103,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
           >
             <li
-              className="mt-[2px] flex gap-3 font-barlow text-nav uppercase tracking-wider text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-subheading_2 md:pb-[35px] lg:gap-nav_lg_gap lg:text-nav"
+              className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
             >
               <span
                 className="font-bold sm:hidden lg:block"
@@ -123,7 +123,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
           >
             <li
-              className="mt-[2px] flex gap-3 font-barlow text-nav uppercase tracking-wider text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-subheading_2 md:pb-[35px] lg:gap-nav_lg_gap lg:text-nav"
+              className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
             >
               <span
                 className="font-bold sm:hidden lg:block"
@@ -143,7 +143,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
           >
             <li
-              className="mt-[2px] flex gap-3 font-barlow text-nav uppercase tracking-wider text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-subheading_2 md:pb-[35px] lg:gap-nav_lg_gap lg:text-nav"
+              className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
             >
               <span
                 className="font-bold sm:hidden lg:block"
@@ -163,7 +163,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
           >
             <li
-              className="mt-[2px] flex gap-3 font-barlow text-nav uppercase tracking-wider text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-subheading_2 md:pb-[35px] lg:gap-nav_lg_gap lg:text-nav"
+              className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
             >
               <span
                 className="font-bold sm:hidden lg:block"
@@ -181,8 +181,8 @@ exports[`renders correctly 1`] = `
       </div>
     </nav>
   </header>,
-  <section
-    className="flex h-screen w-screen flex-col items-center bg-cover bg-center"
+  <main
+    className="flex h-screen w-screen bg-cover bg-center undefined"
     style={
       {
         "backgroundImage": "url(/assets/destination/background-destination-desktop.webp)",

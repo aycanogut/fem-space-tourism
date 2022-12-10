@@ -103,7 +103,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
           >
             <li
-              className="mt-[2px] flex gap-3 font-barlow text-nav uppercase tracking-wider text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-subheading_2 md:pb-[35px] lg:gap-nav_lg_gap lg:text-nav"
+              className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
             >
               <span
                 className="font-bold sm:hidden lg:block"
@@ -123,7 +123,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
           >
             <li
-              className="mt-[2px] flex gap-3 font-barlow text-nav uppercase tracking-wider text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-subheading_2 md:pb-[35px] lg:gap-nav_lg_gap lg:text-nav"
+              className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
             >
               <span
                 className="font-bold sm:hidden lg:block"
@@ -143,7 +143,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
           >
             <li
-              className="mt-[2px] flex gap-3 font-barlow text-nav uppercase tracking-wider text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-subheading_2 md:pb-[35px] lg:gap-nav_lg_gap lg:text-nav"
+              className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
             >
               <span
                 className="font-bold sm:hidden lg:block"
@@ -163,7 +163,7 @@ exports[`renders correctly 1`] = `
             onMouseEnter={[Function]}
           >
             <li
-              className="mt-[2px] flex gap-3 font-barlow text-nav uppercase tracking-wider text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-subheading_2 md:pb-[35px] lg:gap-nav_lg_gap lg:text-nav"
+              className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
             >
               <span
                 className="font-bold sm:hidden lg:block"
@@ -181,25 +181,42 @@ exports[`renders correctly 1`] = `
       </div>
     </nav>
   </header>,
-  <section
-    className="flex h-screen w-screen flex-col items-center bg-cover bg-center"
+  <main
+    className="flex h-screen w-screen bg-cover bg-center flex-col items-center"
     style={
       {
         "backgroundImage": "url(/assets/home/background-home-desktop.webp)",
       }
     }
   >
+    <section
+      className="text-center"
+    >
+      <h2
+        className="font-barlow text-16 uppercase tracking-normal text-tropical_blue md:text-20 md:tracking-[3.38px] lg:tracking-widest"
+      >
+        SO, YOU WANT TO TRAVEL TO
+      </h2>
+      <h1
+        className="uppercase"
+      >
+        SPACE
+      </h1>
+      <p>
+        Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+      </p>
+    </section>
     <a
       href="/destination"
       onClick={[Function]}
       onMouseEnter={[Function]}
     >
       <button
-        className="bold text- hover: b mt-56 h-button_sm w-button_sm rounded-full bg-white font-bellefair text-button font-normal uppercase tracking-tight text-vulcan transition-all hover:shadow-button md:h-button_md md:w-button_md md:text-heading_4 md:tracking-normal lg:h-button_lg lg:w-button_lg "
+        className="text-bold h-button_sm w-button_sm rounded-full bg-white font-bellefair text-20 font-normal uppercase tracking-tighter text-vulcan transition-all hover:shadow-button md:h-button_md md:w-button_md md:text-32 md:tracking-tight lg:h-button_lg lg:w-button_lg "
       >
         explore
       </button>
     </a>
-  </section>,
+  </main>,
 ]
 `;
