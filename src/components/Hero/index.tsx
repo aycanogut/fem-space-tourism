@@ -2,20 +2,17 @@ import { FC } from 'react'
 
 import { IHeroProps } from '../../interfaces/Hero.interface'
 
-const Hero: FC<IHeroProps> = () => {
+const Hero: FC<IHeroProps> = ({ uppertitle, title, description }) => {
   return (
     <section className="mx-5 pt-28 text-center md:mx-0 md:pt-[200px] lg:pt-[300px] lg:text-left">
       <h2 className="font-barlow text-16 uppercase tracking-normal text-tropical_blue md:text-20 md:tracking-wider lg:text-28 lg:tracking-widest">
-        SO, YOU WANT TO TRAVEL TO
+        {uppertitle}
       </h2>
       <h1 className="mt-1 font-bellefair text-80 font-normal uppercase text-white md:-mt-3 md:text-150 ">
-        SPACE
+        {title}
       </h1>
       <p className="text-15 mt-1 font-barlow leading-8 text-tropical_blue md:-mt-4 md:px-48 md:text-16 md:leading-7 lg:max-w-md lg:px-0 lg:pt-3 lg:text-18 lg:leading-8">
-        Let’s face it; if you want to go to space, you might as well genuinely
-        go to outer space and not hover kind of on the edge of it. Well sit
-        back, and relax because we’ll give you a truly out of this world
-        experience!
+        {description}
       </p>
     </section>
   )
