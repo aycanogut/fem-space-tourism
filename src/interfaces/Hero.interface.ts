@@ -1,1 +1,5 @@
-export interface IHeroProps {}
+export interface IHeroProps {
+  uppertitle: string
+  title: string
+  description: string
+}
