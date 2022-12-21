@@ -39,11 +39,13 @@ module.exports = {
       wide: '2.7',
       wider: '3.38px',
       widest: '4.75px',
+      widester: '5.25px',
     },
     extend: {
       colors: {
         vulcan: '#0B0D17',
         tropical_blue: '#D0D6F9',
+        bright_gray: '#383B4B',
         white: '#ffffff',
       },
       spacing: {
@@ -58,6 +60,10 @@ module.exports = {
         button_md: '242px',
         button_lg: '274px',
         button_sm_top: '76px',
+        image_destination_xs: '170px',
+        image_destination_sm: '300px',
+        image_destination_md: '325px',
+        image_destination_lg: '445px',
       },
       backdropBlur: {
         nav: '20px',
