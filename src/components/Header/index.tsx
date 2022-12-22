@@ -12,7 +12,7 @@ import { IHeaderProps, IHeaderItems } from '../../interfaces/Header.interface'
 
 const Header: FC<IHeaderProps> = () => {
   const [isActive, setIsActive] = useState<boolean>(false)
-  const { pathname } = useRouter()
+  const { pathname } = useRouter() || { pathname: { text: '' } }
   const { width } = useWidth()
 
   return (
