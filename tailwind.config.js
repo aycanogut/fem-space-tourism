@@ -60,9 +60,8 @@ module.exports = {
         button_md: '242px',
         button_lg: '274px',
         button_sm_top: '76px',
-        image_destination_xs: '170px',
-        image_destination_sm: '300px',
-        image_destination_md: '325px',
+        image_destination_sm: '170px',
+        image_destination_md: '300px',
         image_destination_lg: '445px',
       },
       backdropBlur: {
