@@ -20,7 +20,7 @@ const Header: FC<IHeaderProps> = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative h-0 w-full"
+      className="relative z-20 h-0 w-full"
     >
       <div className="flex h-full items-center justify-between px-6 sm:px-10 lg:px-14">
         <Link href="/" passHref>
@@ -65,7 +65,7 @@ const Header: FC<IHeaderProps> = () => {
                     pathname === item.url
                       ? 'border-white sm:border-b-[3px]'
                       : ''
-                  } flex h-full items-center text-white transition-all hover:border-b-[3px] hover:border-white/[.5] focus:border-white focus:outline-none sm:active:border-white`}
+                  } flex h-full items-center text-white transition-all focus:border-white focus:outline-none md:hover:border-b-[3px] md:hover:border-white/[.5] md:active:border-white`}
                 >
                   <li className="mt-[2px] flex gap-3 font-barlow text-16 uppercase tracking-normal sm:mt-0 sm:text-14 lg:gap-nav_lg_gap lg:text-16">
                     <span className="font-bold sm:hidden lg:block">
