@@ -3,8 +3,8 @@ import { FC } from 'react'
 import useWidth from '../../hooks/useWidth'
 import screenSize from '../../helpers/screenSize'
 
-import { ILayoutProps } from '../../interfaces/Layout.interface'
 import Header from '../Header'
+import { ILayoutProps } from '../../interfaces/Layout.interface'
 
 const Layout: FC<ILayoutProps> = ({ path, children, className }) => {
   const { width } = useWidth()
@@ -18,7 +18,7 @@ const Layout: FC<ILayoutProps> = ({ path, children, className }) => {
         style={{
           backgroundImage: `url(/assets/${path}/background-${path}-${deviceSize}.webp)`,
         }}
-        className={`flex h-screen w-screen bg-cover bg-center ${className}`}
+        className={`flex w-screen bg-cover bg-center ${className}`}
       >
         {children}
       </main>
