@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <header
-  className="relative h-0 w-full"
+  className="relative z-20 h-0 w-full"
   style={
     {
       "transform": "translateY(-100px) translateZ(0)",
@@ -13,6 +13,7 @@ exports[`renders correctly 1`] = `
     className="flex h-full items-center justify-between px-6 sm:px-10 lg:px-14"
   >
     <a
+      className="focus:outline-none"
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -68,10 +69,10 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className="flex flex-col items-end pl-8 pr-6 pt-9 sm:pt-4 sm:pr-0 sm:pl-0 md:pt-3"
+      className="flex h-full flex-col items-end pl-8 pr-6 pt-9 sm:pt-0 sm:pr-0 sm:pl-0"
     >
       <svg
-        className="cursor-pointer sm:invisible"
+        className="cursor-pointer sm:!hidden"
         height="21px"
         onClick={[Function]}
         style={
@@ -94,15 +95,16 @@ exports[`renders correctly 1`] = `
         />
       </svg>
       <ul
-        className="mr-auto flex flex-col gap-9 pt-14 sm:ml-auto sm:flex-row sm:pt-0 lg:ml-nav_lg_left lg:mr-auto lg:gap-12"
+        className="mr-auto flex flex-col gap-9 pt-14 sm:ml-auto sm:h-full sm:flex-row sm:items-center sm:pt-0 lg:ml-nav_lg_left lg:mr-auto lg:gap-12"
       >
         <a
+          className=" flex h-full items-center text-white transition-all focus:border-white focus:outline-none md:hover:border-b-[3px] md:hover:border-white/[.5] md:active:border-white"
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
           <li
-            className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
+            className="mt-[2px] flex gap-3 font-barlow text-16 uppercase tracking-normal sm:mt-0 sm:text-14 lg:gap-nav_lg_gap lg:text-16"
           >
             <span
               className="font-bold sm:hidden lg:block"
@@ -117,12 +119,13 @@ exports[`renders correctly 1`] = `
           </li>
         </a>
         <a
+          className=" flex h-full items-center text-white transition-all focus:border-white focus:outline-none md:hover:border-b-[3px] md:hover:border-white/[.5] md:active:border-white"
           href="/destination"
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
           <li
-            className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
+            className="mt-[2px] flex gap-3 font-barlow text-16 uppercase tracking-normal sm:mt-0 sm:text-14 lg:gap-nav_lg_gap lg:text-16"
           >
             <span
               className="font-bold sm:hidden lg:block"
@@ -137,12 +140,13 @@ exports[`renders correctly 1`] = `
           </li>
         </a>
         <a
+          className=" flex h-full items-center text-white transition-all focus:border-white focus:outline-none md:hover:border-b-[3px] md:hover:border-white/[.5] md:active:border-white"
           href="/crew"
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
           <li
-            className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
+            className="mt-[2px] flex gap-3 font-barlow text-16 uppercase tracking-normal sm:mt-0 sm:text-14 lg:gap-nav_lg_gap lg:text-16"
           >
             <span
               className="font-bold sm:hidden lg:block"
@@ -157,12 +161,13 @@ exports[`renders correctly 1`] = `
           </li>
         </a>
         <a
+          className=" flex h-full items-center text-white transition-all focus:border-white focus:outline-none md:hover:border-b-[3px] md:hover:border-white/[.5] md:active:border-white"
           href="/technology"
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
           <li
-            className="tracking-normal mt-[2px] flex gap-3 font-barlow text-16 uppercase text-white transition-all hover:border-b-2 hover:border-white active:border-b-2 active:border-white sm:pb-[38px] sm:text-14 md:pb-[35px] lg:gap-nav_lg_gap lg:text-16"
+            className="mt-[2px] flex gap-3 font-barlow text-16 uppercase tracking-normal sm:mt-0 sm:text-14 lg:gap-nav_lg_gap lg:text-16"
           >
             <span
               className="font-bold sm:hidden lg:block"

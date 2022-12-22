@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="flex w-full justify-center gap-4 pt-[85px] font-barlow text-16 font-normal uppercase tracking-wider sm:justify-start sm:pt-[133px] sm:text-20 md:tracking-widest lg:pt-[200px] lg:text-28 lg:tracking-widester"
+>
+  <span
+    className=" font-bold text-white/[.5]"
+  >
+    01
+  </span>
+  <h1
+    className="text-white"
+  >
+    PICK YOUR DESTINATION
+  </h1>
+</header>
+`;
