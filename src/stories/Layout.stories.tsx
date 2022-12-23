@@ -1,5 +1,3 @@
-// boilerplate story example
-
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Layout from '../components/Layout'
 import { ILayoutProps } from '../interfaces/Layout.interface'

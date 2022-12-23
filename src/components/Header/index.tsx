@@ -2,11 +2,9 @@ import { FC, useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-
 import useWidth from '../../hooks/useWidth'
 import navigation from '../../routes/navigation'
 import variants from '../../helpers/variants'
-
 import Icon from '../Icon'
 import { IHeaderProps, IHeaderItems } from '../../interfaces/Header.interface'
 

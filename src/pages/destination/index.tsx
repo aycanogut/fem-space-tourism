@@ -3,12 +3,9 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import useSWR from 'swr'
-
 import fetcher from '../../helpers/fetcher'
-
 import Layout from '../../components/Layout'
 import Title from '../../components/Title'
-
 import { IDestinationProps } from '../../interfaces/Destination.interface'
 
 const Destination: NextPage = () => {
