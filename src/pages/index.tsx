@@ -1,9 +1,7 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import useSWR from 'swr'
-
 import fetcher from '../helpers/fetcher'
-
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Button from '../components/Button'

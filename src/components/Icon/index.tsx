@@ -1,8 +1,7 @@
 import React from 'react'
 import IcoMoon from 'react-icomoon'
-
-import { IIconProps } from '../../interfaces/Icon.interface'
 import iconSet from './selection.json'
+import { IIconProps } from '../../interfaces/Icon.interface'
 
 const Icon = ({ icon, className, width, height, onClick }: IIconProps) => {
   return (

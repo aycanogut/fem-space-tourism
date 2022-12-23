@@ -1,8 +1,6 @@
 import { FC } from 'react'
-
 import useWidth from '../../hooks/useWidth'
 import screenSize from '../../helpers/screenSize'
-
 import Header from '../Header'
 import { ILayoutProps } from '../../interfaces/Layout.interface'
 

@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-
 import { ITitleProps } from '../../interfaces/Title.interface'
 
 const Title: FC<ITitleProps> = ({ id, title }) => {

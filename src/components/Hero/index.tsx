@@ -1,5 +1,4 @@
 import { FC } from 'react'
-
 import { IHeroProps } from '../../interfaces/Hero.interface'
 
 const Hero: FC<IHeroProps> = ({ uppertitle, title, description }) => {

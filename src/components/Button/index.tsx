@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import Link from 'next/link'
-
 import { IButtonProps } from '../../interfaces/Button.interface'
 
 const Button: FC<IButtonProps> = ({ text }) => {

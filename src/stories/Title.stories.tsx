@@ -1,5 +1,3 @@
-// boilerplate story example
-
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Title from '../components/Title'
 import { ITitleProps } from '../interfaces/Title.interface'
