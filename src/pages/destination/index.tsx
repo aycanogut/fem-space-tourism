@@ -65,7 +65,7 @@ const Destination: NextPage = () => {
                 )}
               </div>
             </div>
-            <div className="flex w-full flex-col lg:ml-56 lg:mt-6 lg:w-6/12">
+            <div className="flex w-full flex-col lg:ml-56 lg:mt-6 lg:min-h-[490px] lg:w-6/12">
               <ul className="mx-auto flex cursor-pointer flex-row gap-5 lg:ml-0">
                 {data?.destinations?.content?.map((item: IDestinationProps) => (
                   <li
