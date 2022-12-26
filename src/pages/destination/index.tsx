@@ -14,7 +14,6 @@ const Destination: NextPage = () => {
   const [activeTab, setActiveTab] = useState<IDestinationProps>({
     name: '',
     description: '',
-    images: { webp: '' },
     image: '',
     distance: '',
     travel: '',
@@ -24,8 +23,7 @@ const Destination: NextPage = () => {
     const initialContent = {
       name: data?.destinations?.content[0]?.name,
       description: data?.destinations?.content[0]?.description,
-      images: data?.destinations?.content[0]?.images,
-      image: data?.destinations?.content[0]?.images.webp,
+      image: data?.destinations?.content[0]?.image,
       distance: data?.destinations?.content[0]?.distance,
       travel: data?.destinations?.content[0]?.travel,
     }
@@ -76,8 +74,7 @@ const Destination: NextPage = () => {
                       setActiveTab({
                         name: item.name,
                         description: item.description,
-                        images: item.images,
-                        image: item.images.webp,
+                        image: item.image,
                         distance: item.distance,
                         travel: item.travel,
                       })
