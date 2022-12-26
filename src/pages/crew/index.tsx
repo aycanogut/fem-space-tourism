@@ -9,7 +9,7 @@ const Crew: NextPage = () => {
         <title>Space Tourism | Crew</title>
       </Head>
 
-      <Layout path="crew" />
+      <Layout path="crew" className="h-screen" />
     </>
   )
 }

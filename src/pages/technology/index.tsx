@@ -9,7 +9,7 @@ const Technology: NextPage = () => {
         <title>Space Tourism | Technology</title>
       </Head>
 
-      <Layout path="technology" />
+      <Layout path="technology" className="h-screen" />
     </>
   )
 }
