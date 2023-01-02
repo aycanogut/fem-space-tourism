@@ -20,7 +20,7 @@ const Destination: NextPage = () => {
   })
 
   useEffect(() => {
-    const initialContent = {
+    const initialContent: IDestinationProps = {
       name: data?.destinations?.content[0]?.name,
       description: data?.destinations?.content[0]?.description,
       image: data?.destinations?.content[0]?.image,
