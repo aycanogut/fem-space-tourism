@@ -48,12 +48,14 @@ const Technology: NextPage = () => {
       </Head>
 
       <Layout path="technology" className="flex h-screen w-full flex-col">
-        <Title
-          id={data?.technology?.header?.id}
-          title={data?.technology?.header?.title}
-        />
-        <div className="mt-7 flex flex-col">
-          <div className="relative h-[170px]">
+        <div className="sm:px-10 lg:px-0">
+          <Title
+            id={data?.technology?.header?.id}
+            title={data?.technology?.header?.title}
+          />
+        </div>
+        <div className="mt-7 flex flex-col sm:mt-14">
+          <div className="relative h-[170px] sm:h-[310px]">
             {activeTab?.images?.landscape && activeTab?.images?.portrait && (
               <Image
                 src={
@@ -70,7 +72,7 @@ const Technology: NextPage = () => {
             )}
           </div>
 
-          <ul className="my-6 flex flex-row justify-center gap-4 lg:flex-col lg:gap-8">
+          <ul className="my-6 flex flex-row justify-center gap-4 sm:mt-14 sm:mb-9 lg:flex-col lg:gap-8">
             {data?.technology?.content.map((item: ITechnologyProps) => (
               <li
                 key={item.id}
@@ -95,14 +97,14 @@ const Technology: NextPage = () => {
             ))}
           </ul>
 
-          <div className="mx-6 px-3 text-center">
+          <div className="mx-6 px-3 text-center sm:mx-36">
             <span className="sm:font-16 font-barlow text-14 font-normal uppercase tracking-wider text-tropical_blue">
               the terminology…
             </span>
-            <h2 className="mt-1 mb-3 font-bellefair text-24 uppercase text-white sm:text-40 lg:text-56">
+            <h2 className="mt-1 mb-3 font-bellefair text-24 uppercase text-white sm:mt-2 sm:mb-2 sm:text-40 lg:text-56">
               {activeTab.name}
             </h2>
-            <p className="text-15 font-barlow leading-6 text-tropical_blue">
+            <p className="text-15 font-barlow leading-6 text-tropical_blue sm:text-16 sm:leading-7">
               {activeTab.description}
             </p>
           </div>
