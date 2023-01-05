@@ -79,7 +79,7 @@ const Technology: NextPage = () => {
             {data?.technology?.content.map((item: ITechnologyProps) => (
               <li
                 key={item.id}
-                className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-bright_gray sm:h-[60px] sm:w-[60px] lg:h-20 lg:w-20"
+                className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-bright_gray sm:h-[60px] sm:w-[60px] lg:h-20 lg:w-20"
                 aria-hidden="true"
                 onClick={() =>
                   setActiveTab({
