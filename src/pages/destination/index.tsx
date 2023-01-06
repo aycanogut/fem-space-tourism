@@ -12,6 +12,7 @@ const Destination: NextPage = () => {
   const { data } = useSWR('/json/data.json', fetcher)
 
   const [activeTab, setActiveTab] = useState<IDestinationProps>({
+    id: 0,
     name: '',
     description: '',
     image: '',
@@ -21,6 +22,7 @@ const Destination: NextPage = () => {
 
   useEffect(() => {
     const initialContent: IDestinationProps = {
+      id: data?.destinations?.content[0]?.id,
       name: data?.destinations?.content[0]?.name,
       description: data?.destinations?.content[0]?.description,
       image: data?.destinations?.content[0]?.image,
@@ -64,24 +66,29 @@ const Destination: NextPage = () => {
           </div>
           <div className="flex w-full flex-col lg:ml-56 lg:mt-6 lg:min-h-[490px] lg:w-6/12">
             <ul className="mx-auto flex cursor-pointer flex-row gap-5 lg:ml-0">
-              {data?.destinations?.content?.map((item: IDestinationProps) => (
-                <li
-                  key={item.name}
-                  className="text-normal cursor-pointer font-barlow text-14 uppercase tracking-wider text-tropical_blue focus:outline-none sm:text-16"
-                  aria-hidden="true"
-                  onClick={() =>
-                    setActiveTab({
-                      name: item.name,
-                      description: item.description,
-                      image: item.image,
-                      distance: item.distance,
-                      travel: item.travel,
-                    })
-                  }
-                >
-                  {item.name}
-                </li>
-              ))}
+              {data?.destinations?.content?.map(
+                (item: IDestinationProps, index: number) => (
+                  <li
+                    key={item.name}
+                    className={` ${
+                      activeTab.id === index && 'border-b-[3px] border-white'
+                    } text-normal lg:pb- cursor-pointer pb-2 font-barlow text-14 uppercase tracking-wider text-tropical_blue transition-all hover:border-b-[3px] hover:border-[#979797] focus:outline-none sm:text-16 lg:pb-3`}
+                    aria-hidden="true"
+                    onClick={() =>
+                      setActiveTab({
+                        id: item.id,
+                        name: item.name,
+                        description: item.description,
+                        image: item.image,
+                        distance: item.distance,
+                        travel: item.travel,
+                      })
+                    }
+                  >
+                    {item.name}
+                  </li>
+                )
+              )}
             </ul>
             <div className="flex flex-col px-3 pt-4 text-white sm:px-0 sm:pt-8">
               <h2 className="mx-auto -mb-2 font-bellefair text-56 font-normal uppercase sm:text-80 lg:ml-0 lg:text-100">

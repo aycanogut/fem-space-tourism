@@ -15,7 +15,7 @@ const Technology: NextPage = () => {
   const { width } = useWidth()
 
   const [activeTab, setActiveTab] = useState<ITechnologyProps>({
-    id: '',
+    id: 0,
     name: '',
     images: {
       portrait: '',
@@ -76,28 +76,36 @@ const Technology: NextPage = () => {
           </div>
 
           <ul className="my-6 flex flex-row justify-center gap-4 sm:mt-14 sm:mb-9 lg:my-0 lg:mt-24 lg:flex-col lg:justify-start lg:gap-8">
-            {data?.technology?.content.map((item: ITechnologyProps) => (
-              <li
-                key={item.id}
-                className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-bright_gray sm:h-[60px] sm:w-[60px] lg:h-20 lg:w-20"
-                aria-hidden="true"
-                onClick={() =>
-                  setActiveTab({
-                    id: item.id,
-                    name: item.name,
-                    images: {
-                      portrait: item.images.portrait,
-                      landscape: item.images.landscape,
-                    },
-                    description: item.description,
-                  })
-                }
-              >
-                <span className="font-bellefair text-16 text-white sm:text-24 lg:text-32">
-                  {item.id}
-                </span>
-              </li>
-            ))}
+            {data?.technology?.content.map(
+              (item: ITechnologyProps, index: number) => (
+                <li
+                  key={item.id}
+                  className={`${
+                    activeTab.id === index + 1 && ' bg-white'
+                  } flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-bright_gray transition-all hover:border-white sm:h-[60px] sm:w-[60px] lg:h-20 lg:w-20`}
+                  aria-hidden="true"
+                  onClick={() =>
+                    setActiveTab({
+                      id: item.id,
+                      name: item.name,
+                      images: {
+                        portrait: item.images.portrait,
+                        landscape: item.images.landscape,
+                      },
+                      description: item.description,
+                    })
+                  }
+                >
+                  <span
+                    className={`${
+                      activeTab.id === index + 1 && 'text-[#0B0D17]'
+                    }  font-bellefair text-16 text-white sm:text-24 lg:text-32`}
+                  >
+                    {item.id}
+                  </span>
+                </li>
+              )
+            )}
           </ul>
 
           <div className="mx-6 px-3 text-center sm:mx-36 lg:ml-20 lg:mt-24 lg:w-3/6 lg:px-0 lg:text-left">
