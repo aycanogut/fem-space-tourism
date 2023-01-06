@@ -13,14 +13,17 @@ const Crew: NextPage = () => {
   const { data } = useSWR('/json/data.json', fetcher)
 
   const [activeTab, setActiveTab] = useState<ICrewProps>({
+    id: 0,
     name: '',
     bio: '',
     image: '',
     role: '',
   })
 
+  console.log(activeTab)
   useEffect(() => {
     const initialContent: ICrewProps = {
+      id: data?.crew?.content[0]?.id,
       name: data?.crew?.content[0]?.name,
       bio: data?.crew?.content[0]?.bio,
       image: data?.crew?.content[0]?.image,
@@ -62,13 +65,16 @@ const Crew: NextPage = () => {
 
           <div className="flex flex-col">
             <ul className="flex cursor-pointer flex-row justify-center gap-5 md:order-last md:mt-9 lg:ml-0 lg:mt-[166px] lg:justify-start">
-              {data?.crew?.content?.map((item: ICrewProps) => (
+              {data?.crew?.content?.map((item: ICrewProps, index: number) => (
                 <li
                   key={item.name}
-                  className="border-radius h-[10px] w-[10px] cursor-pointer rounded-full bg-white lg:h-[15px] lg:w-[15px]"
+                  className={`${
+                    activeTab.id === index ? 'bg-white' : 'bg-[#525252]'
+                  } border-radius bg- h-[10px] w-[10px] cursor-pointer rounded-full  transition-all hover:bg-[#979797] lg:h-[15px] lg:w-[15px]`}
                   aria-hidden="true"
                   onClick={() =>
                     setActiveTab({
+                      id: item.id,
                       name: item.name,
                       bio: item.bio,
                       image: item.image,
