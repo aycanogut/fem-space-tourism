@@ -1,5 +1,5 @@
 export interface ITechnologyProps {
-  id: string
+  id: number
   name: string
   images: {
     portrait: string
