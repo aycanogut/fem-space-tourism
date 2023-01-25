@@ -79,7 +79,7 @@ const Crew: NextPage = () => {
             </div>
 
             <div className="flex flex-col">
-              <ul className="flex cursor-pointer flex-row justify-center gap-5 md:order-last md:mt-9 lg:ml-0 lg:mt-[166px] lg:justify-start">
+              <ul className="flex cursor-pointer flex-row justify-center gap-5 md:order-last md:mt-9 md:mb-8 lg:ml-0 lg:mt-16 lg:justify-start xxl:mt-28">
                 {data?.crew?.content?.map((item: ICrewProps, index: number) => (
                   <li
                     key={item.name}
@@ -104,10 +104,10 @@ const Crew: NextPage = () => {
                 <div className="font-bellefair text-16 font-normal uppercase opacity-50 md:text-24 lg:text-32">
                   {activeTab.role}
                 </div>
-                <div className="font-bellefair text-24 font-normal uppercase md:text-40 lg:text-56">
+                <div className="whitespace-nowrap font-bellefair text-24 font-normal uppercase md:text-40 lg:text-56">
                   {activeTab.name}
                 </div>
-                <p className="mt-4 font-barlow text-16 leading-6 text-tropical_blue md:mt-2 md:leading-7 lg:mt-5 lg:pr-32 lg:text-18 xl:pr-36">
+                <p className="mt-4 font-barlow text-16 leading-6 text-tropical_blue md:mt-2 md:min-h-[80px] md:leading-7 lg:mt-5 lg:min-h-[135px] lg:pr-32 lg:text-18 xl:pr-36">
                   {activeTab.bio}
                 </p>
               </div>
