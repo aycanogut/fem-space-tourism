@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
       <Layout
         path="home"
-        className="h-screen flex-col items-center lg:flex-row lg:justify-between lg:px-40"
+        className="h-screen flex-col items-center xl:flex-row xl:justify-between xl:px-40"
       >
         <Hero
           uppertitle={data?.homepage?.uppertitle}

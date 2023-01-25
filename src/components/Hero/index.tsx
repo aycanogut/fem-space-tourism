@@ -9,7 +9,7 @@ const Hero: FC<IHeroProps> = ({ uppertitle, title, description }) => {
       animate={{ x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <section className="mx-5 pt-28 text-center md:mx-0 md:pt-[200px] lg:pt-[300px] lg:text-left">
+      <section className="mx-5 pt-28 text-center md:mx-0 md:pt-[200px] lg:pt-44 lg:text-left xxl:pt-[300px]">
         <h2 className="font-barlow text-16 uppercase tracking-normal text-tropical_blue md:text-20 md:tracking-wider lg:text-28 lg:tracking-widest">
           {uppertitle}
         </h2>
