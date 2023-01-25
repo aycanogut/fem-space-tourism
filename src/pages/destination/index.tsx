@@ -44,7 +44,7 @@ const Destination: NextPage = () => {
 
       <Layout
         path="destination"
-        className="h-full flex-col px-6 sm:h-screen sm:px-10 lg:px-24 xl:px-40"
+        className="min-h-full flex-col px-6 sm:px-10 lg:h-screen lg:overflow-hidden lg:px-24 xl:px-40"
       >
         <Transition
           initial={{ x: -200 }}
@@ -56,25 +56,23 @@ const Destination: NextPage = () => {
             title={data?.destinations?.header?.title}
           />
         </Transition>
-        <div className="flex flex-col justify-center text-white lg:flex-row lg:items-center lg:justify-around">
+        <div className="flex flex-col justify-center text-white lg:flex-row lg:items-center">
           <Transition
             initial={{ x: -200 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="lg:w-6/12">
-              <div className="mx-auto mt-7 mb-6 h-image_destination_sm w-image_destination_sm sm:mt-14 sm:mb-12 md:h-image_destination_md md:w-image_destination_md lg:mt-[95px] lg:h-image_destination_lg lg:w-image_destination_lg">
-                {activeTab.image && (
-                  <Image
-                    src={activeTab.image}
-                    alt={`Picture of the ${activeTab.name}`}
-                    priority={true}
-                    layout="responsive"
-                    width="170px"
-                    height="170px"
-                  />
-                )}
-              </div>
+            <div className="mx-auto mt-7 mb-6 h-image_destination_sm w-image_destination_sm sm:mt-14 sm:mb-12 md:h-image_destination_md md:w-image_destination_md lg:mt-0 lg:h-image_destination_lg lg:w-image_destination_lg xxl:mt-[95px]">
+              {activeTab.image && (
+                <Image
+                  src={activeTab.image}
+                  alt={`Picture of the ${activeTab.name}`}
+                  priority={true}
+                  layout="responsive"
+                  width="170px"
+                  height="170px"
+                />
+              )}
             </div>
           </Transition>
           <Transition
@@ -82,7 +80,7 @@ const Destination: NextPage = () => {
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="flex w-full flex-col lg:ml-56 lg:mt-6 lg:min-h-[490px] lg:w-6/12">
+            <div className="flex w-full flex-col md:ml-auto lg:mt-6 lg:min-h-[490px] lg:w-8/12">
               <ul className="mx-auto flex cursor-pointer flex-row gap-5 lg:ml-0">
                 {data?.destinations?.content?.map(
                   (item: IDestinationProps, index: number) => (
@@ -112,11 +110,11 @@ const Destination: NextPage = () => {
                 <h2 className="mx-auto -mb-2 font-bellefair text-56 font-normal uppercase sm:text-80 lg:ml-0 lg:text-100">
                   {activeTab.name}
                 </h2>
-                <p className="font-15 text-center font-barlow font-normal leading-7 tracking-wide text-tropical_blue sm:px-16 lg:px-0 lg:text-left">
+                <p className="font-15 min-h-[115px] text-center font-barlow font-normal leading-7 tracking-wide text-tropical_blue sm:px-16 lg:px-0 lg:text-left">
                   {activeTab.description}
                 </p>
-                <div className="my-7 border-b-[1px] border-bright_gray sm:mx-12 sm:mt-12 lg:mx-0 lg:mt-14" />
-                <div className="mx-auto flex flex-col gap-6 pb-16 text-center sm:flex-row sm:gap-24 sm:pb-14 lg:ml-0 lg:text-left">
+                <div className="my-7 border-b-[1px] border-bright_gray sm:mx-12 sm:mt-12 lg:mx-0 lg:mt-4 xxl:mt-14" />
+                <div className="mx-auto flex flex-col gap-6 whitespace-nowrap pb-16 text-center sm:flex-row sm:gap-24 sm:pb-14 lg:ml-0 lg:text-left">
                   <div>
                     <div className="font-barlow text-14 font-normal uppercase tracking-normal text-tropical_blue sm:pb-1">
                       {'AVG. DISTANCE'}
